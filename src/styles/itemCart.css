@@ -1,0 +1,100 @@
+.itemCart {
+    display: flex;
+    border: 1px solid #d2b8ff;
+    width: 100%;
+    height: 130px;
+    align-items: center;
+    border-radius: 10px;  /* Bordes más redondeados para un diseño más suave */
+    margin: 10px 0;
+    position: relative;
+    background-color: #f9f9f9; /* Fondo ligeramente gris para separar los items */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.itemCart .delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5b00fb;
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.itemCart .delete img {
+    transform: scale(0.6);
+}
+
+.itemCart .delete:hover {
+    background-color: #4c00d1; /* Cambio de color en hover */
+}
+
+/* imagen */
+.itemCart .img {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+}
+
+.itemCart .img img {
+    width: 100%; /* Imagen ajustada al 100% de su contenedor */
+    height: auto;
+    border-radius: 5px; /* Bordes redondeados en la imagen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave en la imagen */
+}
+
+/* descripción */
+.itemCart .description-cantidad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 33.33%;
+    height: 50%;
+    padding-left: 15px;
+}
+
+.itemCart .description-cantidad .title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333; /* Color oscuro para el título */
+}
+
+.itemCart .description-cantidad .cantidad {
+    font-size: 16px;
+    color: #777; /* Color gris suave para la cantidad */
+}
+
+/* precio */
+.itemCart .price {
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+    height: 50%;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 15px;
+}
+
+.itemCart .price .subtotal {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333; /* Color oscuro para subtotal */
+}
+
+.itemCart .price .price {
+    font-weight: bold;
+    color: #5b00fb;
+    font-size: 26px;
+    width: 100%;
+    text-align: right;
+}
+
+/* Hover para el precio */
+.itemCart .price .price:hover {
+    color: #4c00d1; /* Cambio de color al pasar el ratón */
+}

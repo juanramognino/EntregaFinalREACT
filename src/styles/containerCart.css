@@ -1,0 +1,132 @@
+.cart{
+    padding: 30px;
+    border-radius: 15px;
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    height: 850px;
+    background-color: #fff;
+    right: 30px;
+    top: 80px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 10px 30px rgba(0, 0, 0, 0.15);
+    border: 2px solid #f1f1f1; /* Borde suave para un toque más elegante */
+    transition: transform 0.3s ease-in-out;
+}
+
+.cart:hover{
+    transform: scale(1.02); /* Le da un pequeño zoom cuando el carrito está en hover */
+}
+
+/* ************************** */
+.cart .cerrar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 5%;
+    width: 100%;
+    margin-bottom: 15px; /* Espacio inferior */
+}
+
+.cart .cerrar .close{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.cart .cerrar .close:hover{
+    background-color: #f1f1f1;
+    border-color: #5b00fb; /* Color en hover */
+}
+
+/* ************************** */
+
+.cart .containerItemsCart{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    height: 84%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.cart .containerItemsCart .emptyCart{
+    color: #5b00fb;
+    font-size: 24px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Botones de la sección de terminación de compra */
+.cart .TerminarCompra{
+    display: flex;
+    justify-content: space-between;
+    height: 12%;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.cart .TerminarCompra #detalles{
+    height: 55px;
+    width: 85%;
+    border-radius: 50px;
+    background-color: #5b00fb;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.cart .TerminarCompra #detalles:hover{
+    background-color: #4c00d1; /* Cambio de color al hacer hover */
+}
+
+.cart .TerminarCompra .terminar{
+    background-color: #5b00fb;
+    height: 55px;
+    width: 88%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.cart .TerminarCompra .terminar:hover{
+    background-color: #4c00d1; /* Cambio de color al hacer hover */
+}
+
+.cart .TerminarCompra .clear{
+    background-color: #5b00fb;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.cart .TerminarCompra .clear:hover{
+    background-color: #4c00d1; /* Cambio de color al hacer hover */
+}
+
+

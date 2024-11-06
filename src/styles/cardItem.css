@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cardItem{
+    height: 480px;
+    width: 300px;
+    padding: 25px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 8px 30px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(240, 240, 240, 0.9));
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardItem:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+/* imagen */
+.cardItem .cardImg{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.cardItem .cardImg img{
+    transform: scale(0.7);
+    transition: transform 0.3s ease;
+}
+
+.cardItem .cardImg img:hover{
+    transform: scale(0.75);
+}
+
+/* descripcion */
+.cardDescription{
+    display: flex;
+    flex-direction: column;
+    height: 35%;
+    color: #333;
+}
+
+.cardDescription .title{
+    font-size: 22px;
+    margin: 8px 0;
+    font-family: 'Arial', sans-serif;
+    color: #222;
+}
+
+.cardDescription .description{
+    color: #666;
+    font-size: 14px;
+    margin: 8px 0;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.cardDescription .cant{
+    color: #333;
+    font-size: 16px;
+    margin: 6px 0;
+}
+
+.cardDescription .precio{
+    color: #FF6347; /* Tomate */
+    font-size: 36px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* contenedor de botones */
+
+.buttons{
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons #detalles{
+    height: 55px;
+    width: 75%;
+    border-radius: 50px;
+    background-color: #FF6347; /* Tomate */
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.buttons #detalles:hover{
+    background-color: #FF4500; /* Rojo anaranjado */
+}
+
+.buttons #addCart{
+    background-color: #32CD32; /* Verde lima */
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.buttons #addCart img{
+    transform: scale(0.7);
+}
+
+.buttons #detalleshover, .buttons #addCart:hover{
+    background-color: #228B22; /* Verde bosque */
+}
+
+
+
